@@ -1,18 +1,21 @@
 ---
+import mainStyles from "../styles/main.css";
+import favicon from "../assets/images/favicon.webp";
+import myhead from "../assets/images/myhead.webp";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="icon" href="../assets/images/favicon.webp" />
-    <link rel="apple-touch-icon" href="../assets/images/favicon.webp" />
+    <link rel="stylesheet" href={mainStyles} />
+    <link rel="icon" href={favicon} />
+    <link rel="apple-touch-icon" href={favicon} />
     <meta name="description" content="Eric's homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>hey</title>
   </head>
   <body>
     <h1>hey</h1>
-    <img alt="Mah head" src="../assets/images/myhead.webp" height="844" width="496" />
+    <img alt="Mah head" src={myhead} height="844" width="496" />
   </body>
 </html>
