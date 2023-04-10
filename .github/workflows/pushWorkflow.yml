@@ -9,6 +9,14 @@ jobs:
     name: Publish to Cloudflare Pages
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.15.0"
+          registry-url: https://npm.pkg.github.com
+      - id: super-cache
+        uses: mangs/super-cache-action@v3
+      - if: steps.super-cache.outputs.cache-hit != 'true'
+        run: npm ci
       - run: npm run build
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
