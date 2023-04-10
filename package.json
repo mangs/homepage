@@ -1,6 +1,12 @@
 {
   "name": "homepage",
   "version": "0.0.1",
+  "author": "Eric L. Goldstein <mangs@github>",
+  "description": "mah homepage",
+  "engines": {
+    "node": "18.15.0"
+  },
+  "packageManager": "npm@9.5.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,6 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "6.2.2",
     "astro": "2.2.1"
   },
   "devDependencies": {
