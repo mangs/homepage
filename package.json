@@ -4,9 +4,9 @@
   "author": "Eric L. Goldstein <mangs@github>",
   "description": "mah homepage",
   "engines": {
-    "node": "18.15.0"
+    "node": "18.16.0"
   },
-  "packageManager": "npm@9.5.0",
+  "packageManager": "npm@9.5.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "6.2.2",
-    "astro": "2.2.1"
+    "astro": "2.3.0"
   },
   "devDependencies": {
     "prettier": "2.8.7"
